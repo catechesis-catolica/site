@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="assets/img/catechesis-favicon.ico" type="image/png">
+        <!--=============== FAVICON ================-->
+        <link rel="shortcut icon" href="assets/img/catechesis-favicon.ico" type="x-icon">
 
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -15,12 +16,12 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Catechesis: Conheça a fé católica!</title>
+        <title>Catechesis Website</title>
     </head>
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo"><img src="assets/img/catechesis-logotipo-header.png" alt="Catechesis-logo"></a>
+                <a href="#" class="nav__logo"><img src="assets/img/LOGO TITULO VERM - Copia.png" alt=""></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -28,19 +29,19 @@
                             <a href="#home" class="nav__link active-link">Início</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">Quem Somos</a>
+                            <a href="#about" class="nav__link">Sobre Nós</a>
                         </li>
                         <li class="nav__item">
                             <a href="#discover" class="nav__link">Santos</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#place" class="nav__link">Catecismo</a>
+                            <a href="#place" class="nav__link">Catequese</a>
                         </li>
                     </ul>
 
-                    <!-- Theme change button -->
-                    <!--<div class="nav__dark">
-                        <span class="change-theme-name">Dark mode</span>
+                    <!--<div class="nav__dark">-->
+                        <!-- Theme change button -->
+                        <!--<span class="change-theme-name">Dark mode</span>
                         <i class="ri-moon-line change-theme" id="theme-button"></i>
                     </div>-->
 
@@ -56,26 +57,26 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <img src="assets/img/catechesis-banner-home1.jpg" alt="banner-principal-sagrado-coração-de-Jesus" class="home__img">
+                <img src="assets/img/catechesis-banner-home1.jpg" alt="" class="home__img">
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__data-subtitle">Discover your place</span>
-                        <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
-                        <a href="#" class="button">Comece aqui!</a>
-
+                        <span class="home__data-subtitle">"Ide por todo o mundo, e pregai</span>
+                        <h1 class="home__data-title">o Evangelho<br><b>a toda criatura"</b></h1>
+                        <span class="home__data-subtitle">- Marcos 16:15</span><br>
+                        <a href="#about"class="button__one">Comece aqui!</a>
                     </div>
 
                     <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <!--<a href="https://www.facebook.com/" target="_blank" class="home__social-link">
                             <i class="ri-facebook-box-fill"></i>
-                        </a>
+                        </a>-->
                         <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-instagram-fill"></i> Instagram
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <!--<a href="https://twitter.com/" target="_blank" class="home__social-link">
                             <i class="ri-twitter-fill"></i>
-                        </a>
+                        </a>-->
                     </div>
 
                     <!--<div class="home__info">
@@ -97,65 +98,96 @@
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
+                        <h2 class="section__title about__title">Sobre Nós</h2>
                         <p class="about__description">You can find the most beautiful and pleasant places at the best 
                             prices with special discounts, you choose the place we will guide you all the way to wait, get your 
                             place now.
                         </p>
-                        <a href="#" class="button">Reserve a place</a>
+                        <!--<a href="#" class="button">Reserve a place</a>-->
                     </div>
 
                     <div class="about__img">
                         <!--<div class="about__img-overlay">
-                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                            <img src="assets/img/catechesis-eucaristia-sobre-nos.png" alt="" class="about__img-one">
                         </div>-->
 
                         <div class="about__img-overlay">
-                            <img src="assets/img/catechesis-sobre-nos-logotipo.jpg" alt="logotipo-catechesis-sobre-nós" class="about__img-two">
+                            <img src="assets/img/catechesis-sobre-nos-logotipo.jpg" alt="" class="about__img-two">
                         </div>
                     </div>
                 </div>
             </section>
             
-            <!--==================== VIDA DOS SANTOS ====================-->
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video of the most beautiful and 
+                        pleasant places for you and your family.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/catechesis-video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button__one button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== DISCOVER ====================-->
             <section class="discover section" id="discover">
-                <h2 class="section__title">Vida dos santos</h2>
+                <h2 class="section__title">Vida dos Santos</h2>
                 
                 <div class="discover__container container swiper-container">
                     <div class="swiper-wrapper">
-                        <!--==================== CARLO ACUTIS 1 ====================-->
+                        <!--==================== DISCOVER 1 ====================-->
                         <div class="discover__card swiper-slide">
-                            <img src="assets/img/santo-carlo-acutis.jpg" alt="beato-carlo-acutis" class="discover__img">
+                            <a href="carlo-acutis-page.html"><img src="assets/img/Carlo-Acutis-01.jpg" alt="" class="discover__img"></a>
                             <div class="discover__data">
                                 <h2 class="discover__title">Beato Carlo Acutis</h2>
                                 <span class="discover__description">12 de Outubro</span>
                             </div>
                         </div>
 
-                        <!--==================== JOÃO PAULO II 2 ====================-->
+                        <!--==================== DISCOVER 2 ====================-->
                         <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <a href="nossa-senhora-aparecida.html"><img src="assets/img/Nossa-Senhora-Aparecida-01.png" alt="" class="discover__img"></a>
                             <div class="discover__data">
-                                <h2 class="discover__title">Hawaii</h2>
-                                <span class="discover__description">15 tours available</span>
+                                <h2 class="discover__title">Nossa Senhora Aparecida</h2>
+                                <span class="discover__description">12 de Outubro</span>
                             </div>
                         </div>
 
                         <!--==================== DISCOVER 3 ====================-->
                         <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <a href="santa-teresa-davila-page.html">
+                                <img src="assets/img/Santa-Teresa-de-Avila-01.png" alt="Santa Teresa D'Ávila" class="discover__img"></a>
                             <div class="discover__data">
-                                <h2 class="discover__title">Hvar</h2>
-                                <span class="discover__description">18 tours available</span>
+                                <h2 class="discover__title">Santa Teresa D'Ávila</h2>
+                                <span class="discover__description">15 de Outubro</span>
                             </div>
                         </div>
 
                         <!--==================== DISCOVER 4 ====================-->
                         <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <a href="lucas-evangelista.html"><img src="assets/img/São-Lucas-01.png" alt="São Lucas, Evangelista" class="discover__img"></a>
                             <div class="discover__data">
-                                <h2 class="discover__title">Whitehaven</h2>
-                                <span class="discover__description">32 tours available</span>
+                                <h2 class="discover__title">São Lucas, Evangelista</h2>
+                                <span class="discover__description">18 de Outubro</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="santa-teresinha-page.html"><img src="assets/img/Santa-Teresinha-do-Menino-Jesus-01.png" alt="Santa Teresinha do Menino Jesus" class="discover__img"></a>
+                            <div class="discover__data">
+                                <h2 class="discover__title">Santa<br>Teresinha do Menino Jesus</h2>
+                                <span class="discover__description">1 de Outubro</span>
                             </div>
                         </div>
                     </div>
@@ -163,7 +195,7 @@
             </section>
 
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
+            <!--<section class="experience section">
                 <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
 
                 <div class="experience__container container grid">
@@ -194,92 +226,73 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
-            <!--==================== VIDEO ====================-->
-            <section class="video section">
-                <h2 class="section__title">Video Tour</h2>
-
-                <div class="video__container container">
-                    <p class="video__description">Find out more with our video of the most beautiful and 
-                        pleasant places for you and your family.
-                    </p>
-
-                    <div class="video__content">
-                        <video id="video-file">
-                            <source src="assets/video/video.mp4" type="video/mp4">
-                        </video>
-
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
+            <!--========== VIDEO AREA TEMPLATE ===============-->
 
             <!--==================== PLACES ====================-->
             <section class="place section" id="place">
-                <h2 class="section__title">Choose Your Place</h2>
+                <h2 class="section__title">Catequese</h2>
 
                 <div class="place__container container grid">
                     <!--==================== PLACES CARD 1 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        <img src="assets/img/catecismo-02.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>-->
                             </span>
 
                             <div class="place__data">
-                                <h3 class="place__title">Bali</h3>
-                                <span class="place__subtitle">Indonesia</span>
-                                <span class="place__price">$2499</span>
+                                <h3 class="place__title">Catecismo da Igreja Católica</h3>
+                                <!--<span class="place__subtitle">Indonesia</span>
+                                <span class="place__price">$2499</span>-->
                             </div>
                         </div>
 
-                        <button class="button button--flex place__button">
+                        <a href="catecismo.html"><button class="button button--flex place__button">
                             <i class="ri-arrow-right-line"></i>
-                        </button>
+                        </button></a>
                     </div>
 
                     <!--==================== PLACES CARD 2 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        <img src="assets/img/Codigo-de-Direito-Canonico-02.png" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">5,0</span>
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>-->
                             </span>
 
                             <div class="place__data">
-                                <h3 class="place__title">Bora Bora</h3>
-                                <span class="place__subtitle">Polinesia</span>
-                                <span class="place__price">$1599</span>
+                                <h3 class="place__title">CDC | Código de Direito Canônico</h3>
+                                <!--<span class="place__subtitle">Polinesia</span>
+                                <span class="place__price">$1599</span>-->
                             </div>
                         </div>
 
                         <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
+                            <a href="https://www.vatican.va/archive/cod-iuris-canonici/portuguese/codex-iuris-canonici_po.pdf" target="_blank"><button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button></a>
                         </button>
                     </div>
 
                     <!--==================== PLACES CARD 3 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        <img src="assets/img/Codigo-de-Direito-Canonico-02.png" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,9</span>
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>-->
                             </span>
 
                             <div class="place__data">
-                                <h3 class="place__title">Hawaii</h3>
-                                <span class="place__subtitle">EE.UU</span>
-                                <span class="place__price">$3499</span>
+                                <h3 class="place__title">DSI | Doutrina Social da Igreja</h3>
+                                <!--<span class="place__subtitle">EE.UU</span>
+                                <span class="place__price">$3499</span>-->
                             </div>
                         </div>
 
@@ -290,52 +303,74 @@
 
                     <!--==================== PLACES CARD 4 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        <img src="assets/img/Codigo-de-Direito-Canonico-02.png" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>-->
                             </span>
 
                             <div class="place__data">
-                                <h3 class="place__title">Whitehaven</h3>
-                                <span class="place__subtitle">Australia</span>
-                                <span class="place__price">$2499</span>
+                                <h3 class="place__title">Milagres Eucarísticos</h3>
+                                <!--<span class="place__subtitle">Australia</span>
+                                <span class="place__price">$2499</span>-->
                             </div>
                         </div>
 
-                        <button class="button button--flex place__button">
+                        <a href="http://www.miracolieucaristici.org/pr/Liste/list.html" target="_blank"><button class="button button--flex place__button">
                             <i class="ri-arrow-right-line"></i>
-                        </button>
+                        </button></a>
                     </div>
 
                     <!--==================== PLACES CARD 5 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        <img src="assets/img/Codigo-de-Direito-Canonico-02.png" alt="Aparições de Nossa Senhora" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>-->
                             </span>
 
                             <div class="place__data">
-                                <h3 class="place__title">Hvar</h3>
-                                <span class="place__subtitle">Croacia</span>
-                                <span class="place__price">$1999</span>
+                                <h3 class="place__title">Aparições Marianas</h3>
+                                <!--<span class="place__subtitle">Croacia</span>
+                                <span class="place__price">$1999</span>-->
                             </div>
                         </div>
 
-                        <button class="button button--flex place__button">
+                        <a href="http://www.apparizionimadonna.org/pt/avm/home" target="_blank"><button class="button button--flex place__button">
                             <i class="ri-arrow-right-line"></i>
-                        </button>
+                        </button></a>
+                    </div>
+
+                    <!--==================== PLACES CARD 6 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/Codigo-de-Direito-Canonico-02.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <!--<i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>-->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Calendário Litúrgico</h3>
+                                <!--<span class="place__subtitle">Croacia</span>
+                                <span class="place__price">$1999</span>-->
+                            </div>
+                        </div>
+
+                        <a href="http://www.gcatholic.org/calendar/2021/BR-pt.htm" target="_blank"><button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button></a>
                     </div>
                 </div>
             </section>
 
             <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
+            <!--<section class="subscribe section">
                 <div class="subscribe__bg">
                     <div class="subscribe__container container">
                         <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
@@ -352,10 +387,10 @@
                         </form>
                     </div>
                 </div>
-            </section>
+            </section>-->
             
             <!--==================== SPONSORS ====================-->
-            <section class="sponsor section">
+            <!--<section class="sponsor section">
                 <div class="sponsor__container container grid">
                     <div class="sponsor__content">
                         <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
@@ -374,35 +409,35 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </main>-->
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content grid">
                     <div class="footer__data">
-                        <h3 class="footer__title">Travel</h3>
-                        <p class="footer__description">Travel you choose the <br> destination, 
+                        <h3 class="footer__title">Sobre Nós</h3>
+                        <p class="footer__description">Catechesis you choose the <br> destination, 
                             we offer you the <br> experience.
                         </p>
-                        <div>
+                        <!--<div>
                             <a href="https://www.facebook.com/" target="_blank" class="footer__social">
                                 <i class="ri-facebook-box-fill"></i>
                             </a>
                             <a href="https://twitter.com/" target="_blank" class="footer__social">
                                 <i class="ri-twitter-fill"></i>
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <a href="https://www.instagram.com/catechesisapp/" target="_blank" class="footer__social">
                                 <i class="ri-instagram-fill"></i>
                             </a>
                             <a href="https://www.youtube.com/" target="_blank" class="footer__social">
                                 <i class="ri-youtube-fill"></i>
                             </a>
-                        </div>
+                        </div>-->
                     </div>
     
                     <div class="footer__data">
-                        <h3 class="footer__subtitle">About</h3>
+                        <h3 class="footer__subtitle">Santos</h3>
                         <ul>
                             <li class="footer__item">
                                 <a href="" class="footer__link">About Us</a>
@@ -417,7 +452,7 @@
                     </div>
     
                     <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
+                        <h3 class="footer__subtitle">Catequese</h3>
                         <ul>
                             <li class="footer__item">
                                 <a href="" class="footer__link">Team</a>
@@ -432,7 +467,7 @@
                     </div>
     
                     <div class="footer__data">
-                        <h3 class="footer__subtitle">Support</h3>
+                        <h3 class="footer__subtitle">Contatos</h3>
                         <ul>
                             <li class="footer__item">
                                 <a href="" class="footer__link">FAQs</a>
@@ -448,16 +483,16 @@
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
-                    <div class="footer__terms">
+                    <p class="footer__copy">&#169; 2021 Catechesis. Todos os direitos reservados.</p>
+                    <!--<div class="footer__terms">
                         <a href="#" class="footer__terms-link">Terms & Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </footer>
 
-         <!--========== SCROLL UP ==========-->
+        <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>

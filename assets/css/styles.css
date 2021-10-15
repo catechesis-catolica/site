@@ -193,7 +193,7 @@ input {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: #ffffff; /*COR DE BACKGROUND HEADER || "transparent" é uma opção*/
 }
 
 /*=============== NAV ===============*/
@@ -204,13 +204,13 @@ input {
   align-items: center;
 }
 
-.nav__logo, .nav__toggle {
+/*.nav__logo, .nav__toggle {
   color: var(--white-color);
 }
 
 .nav__logo {
   font-weight: var(--font-semi-bold);
-}
+}*/
 
 .nav__toggle {
   font-size: 1.2rem;
@@ -242,13 +242,13 @@ input {
 }
 
 .nav__link {
-  color: var(--text-color-light);
+  color: var(--text-color-light); /*#b6332b*/
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
 
 .nav__link:hover {
-  color: var(--text-color);
+  color: var(--text-color); /**/
 }
 
 .nav__close {
@@ -604,7 +604,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: .75rem .75rem 1rem;
+  padding: 10.5rem .75rem 1rem; /*MARGENS DE TÍTULO DOS CARTÕES DA SESSÃO "CATECISMO"*/
 }
 
 .place__rating {

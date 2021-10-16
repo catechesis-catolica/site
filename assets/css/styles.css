@@ -71,7 +71,7 @@
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+/*body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -79,10 +79,10 @@ body.dark-theme {
   --body-color: hsl(var(--hue-color), 29%, 12%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-}
+}*/
 
 /*========== Button Dark/Light ==========*/
-.nav__dark {
+/*.nav__dark {
   display: flex;
   align-items: center;
   column-gap: 2rem;
@@ -103,7 +103,7 @@ body.dark-theme {
 .change-theme-name {
   font-size: var(--small-font-size);
 }
-
+*/
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -265,16 +265,16 @@ input {
   right: 0;
 }
 
-/* Change background header */
+/* MUDAR COR DO BACKGROUND DO HEADER NO CORPO DO SITE */
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
-.scroll-header .nav__logo,
+/*.scroll-header .nav__logo,
 .scroll-header .nav__toggle {
   color: var(--title-color);
-}
+}*/
 
 /* Active link */
 .active-link {
@@ -377,17 +377,27 @@ input {
 }
 
 /*=============== BUTTONS ===============*/
+/* BOTÃO DA SESSÃO "CATECISMO" */
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: var(--white-color);
+  background-color: #b6332b; /* COR DO BOTÃO */
+  color: var(--white-color); /* COR DA SETA INSERIDA NO BOTÃO*/
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+}
+
+.button__one {
+  display: inline-block;
+  background-color: #feca40; /* COR DO BOTÃO DO BANNER PRINCIPAL */
+  color: var(--white-color); /* COR DA SETA INSERIDA NO BOTÃO*/
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: .3s;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: #902d24; /* COR DO BOTÃO NO EFEITO HOVER */
 }
 
 .button--flex {
@@ -570,7 +580,7 @@ input {
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
-  height: 230px;
+  height: 230px; /* TAMANHO DOS CARTÕES NA SESSÃO "CATECISMO" NA VERSÃO MOBILE */
 }
 
 .place__container {
@@ -600,7 +610,7 @@ input {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%; /* AJUSTE DA ALTURA DO TEXTO NA SESSÃO DE "CATECISMO" */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -631,20 +641,20 @@ input {
   margin-bottom: var(--mb-0-25);
 }
 
-.place__subtitle {
+/*.place__subtitle {
   font-size: var(--smaller-font-size);
   margin-bottom: var(--mb-1-25);
-}
+}*/
 
 .place__button {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: .75rem 1rem;
+  padding: .75rem 1rem; /* TAMANHO DO BOTÃO DA SESSÃO "CATECISMO" */
 }
 
 /*=============== SUBSCRIBE ===============*/
-.subscribe__bg {
+/*.subscribe__bg {
   background-color: var(--first-color-second);
   padding: 2.5rem 0;
 }
@@ -675,7 +685,7 @@ input {
 
 .subscribe__input::placeholder {
   color: var(--text-color);
-}
+}*/
 
 /*=============== SPONSORS ===============*/
 .sponsor__container {
@@ -766,7 +776,7 @@ input {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background-color: #b6332b; /* COR DO BOTÃO SCROLL UP */
   padding: .5rem;
   display: flex;
   opacity: .9;
@@ -853,15 +863,15 @@ input {
     height: calc(var(--header-height) + 1.5rem);
   }
   .nav__link {
-    color: var(--white-color);
+    color: #b6332b; /*COR DOS TEXTOS DO HEADER*/
     text-transform: initial;
   }
   .nav__link:hover {
-    color: var(--white-color);
+    color: #feca40; /*COR DOS TEXTOS DO HEADER NO EFEITO HOVER*/
   }
-  .nav__dark {
+  /*.nav__dark {
     position: initial;
-  }
+  }*/
   .nav__menu {
     display: flex;
     column-gap: 1rem;
@@ -873,27 +883,27 @@ input {
   .nav__toggle, .nav__close {
     display: none;
   }
-  .change-theme-name {
+  /*.change-theme-name {
     display: none;
   }
   .change-theme {
     color: var(--white-color);
-  }
+  }*/
   .active-link::before {
     background-color: var(--white-color);
   }
   .scroll-header .nav__link {
-    color: var(--text-color);
+    color: #b6332b; /* COR DO TEXTO NO HEADER NO CORPO DO SITE */
   }
   .scroll-header .active-link {
-    color: var(--title-color);
+    color: #feca40; /* COR DO TEXTO NO HEADER SELECIONADO NO CORPO DO SITE */
   }
   .scroll-header .active-link::before {
-    background-color: var(--title-color);
+    background-color: #feca40; /* COR DO SUBLINHADO DO TEXTO */
   }
-  .scroll-header .change-theme {
+  /*.scroll-header .change-theme {
     color: var(--text-color);
-  }
+  }*/
   .section {
     padding: 7rem 0 2rem;
   }
